@@ -1,0 +1,44 @@
+/* HEADER */
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar-nav {
+    background-color: white;  
+    font-weight: bold;
+    display: flex;
+}
+
+header .navbar-collapse {
+    justify-content: flex-end;
+}
+
+header .navbar-nav .navbar-brand {
+    padding: 0;
+}
+
+header .navbar-nav .nav-item  {
+    border-radius: 6px;
+    margin-left: 25px;
+    display: flex;
+}
+
+header .navbar-nav .nav-item.active {
+    background-color: orange;
+}
+
+header .navbar-nav .nav-link {
+    color: black;
+    font-size: 1.1em;
+}
+
+header .navbar-nav .nav-item:not(.active) .nav-link:focus,
+header .navbar-nav .nav-item:not(.active) .nav-link:hover {
+    color: orange;
+}
+
+header .navbar .navbar-brand img {
+    max-width: 250px;
+}

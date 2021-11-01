@@ -1,0 +1,53 @@
+/* CAROUSSEL */
+.carousel-item {
+    background-position: center;
+    background-size: cover;
+    height: 32rem;
+}
+.carousel-item.item1 {
+    background-image: url(../../image/om1.jpg);
+}
+.carousel-item.item2 {
+    background-image: url(../../image/om2.jpg);
+}
+.carousel-item.item3 {
+    background-image: url(../../image/om3.jfif);
+}
+.carousel-item .carousel-caption {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+}
+.carousel-item .carousel-caption h2 {
+    margin-bottom: 0;
+}
+.carousel-item.item2 .carousel-caption {
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 150px;
+}
+.carousel-item.item2 h2 {
+    color:white;
+}
+.carousel-caption > .line-break {
+    width: 100%;
+    height: 5px;
+    background: red;
+}
+
+.boutoncaroussel {
+    margin-left: 30%;
+    background-color: #26a9e0;
+}
+
+.boutoncaroussel1 {
+    background-color: #26a9e0;
+}
+
+.btn:focus,
+.btn:hover {
+    color: black!important;
+}

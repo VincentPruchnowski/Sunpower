@@ -1,0 +1,107 @@
+/* GENERAL */
+
+* {
+    list-style: none;
+    font-family: tommy;
+}
+
+main section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+main ol,
+main ul {
+    padding: 0;
+}
+
+main a:focus,
+main a:hover {
+    color: orange;
+}
+
+/* CLASSES COMMUNES */
+
+main .lorem {
+    width: 600px;
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+main .cercle {
+    width: 25px;
+    height: 25px;
+}
+
+main .bg-orange {
+    background-image: linear-gradient(to right top, #ffb600, #ffac00, #ffa200, #ff9800, #ff8e00, #ff8700, #ff8000, #ff7800, #ff7200, #ff6b00, #ff6400, #ff5d00);
+}
+
+main .bg-gris {
+    background-color: #f4f4f4;
+}
+
+/* TITRE */
+main .titre-principal {
+    display: flex;
+    justify-content: center;
+}
+
+main .title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+
+main .title h1 {
+    font-style: italic;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+main .title h2 {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+main .title img {
+    margin-top: 6px;
+}
+
+/* TEXTE */
+main .col-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .col-text .text-container {
+    text-align: left;
+    max-width: 100%;
+    width: 600px;
+}
+
+/* PHOTOS */
+main .col-photos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+main {
+    padding-bottom: 60px;
+}
+main label {
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+main select {
+    font-size: .9rem;
+    padding: 2px 5px;
+}
+
+main form.bg-gris {
+    padding: 25px;
+}
+
+main section:not(.titre-principal) {
+    padding-bottom: 0;
+}
+
+.btn {
+    background-color: #26a9e0;
+
+}
+
+#message {
+    padding: 50px 0 50px 0;
+}

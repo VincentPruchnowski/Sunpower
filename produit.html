@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produit</title>
+
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/favicon_package_v0.16/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet" />
+    <link href="assets/style/general.css" rel="stylesheet">
+    <link href="assets/style/common/footer.css" rel="stylesheet">
+    <link href="assets/style/common/nav.css" rel="stylesheet">
+    <link href="assets/style/pages/produit.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/javascript/monscript.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="assets/javascript/map.js"></script>
+</head>
+
+<!--FONCTION JS-->
+<body onload="init()">
+
+    <!--HEADER-->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/image/logosunpo.png" id="logo" alt="logo">
+                    </img>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="produit.html">Notre produit</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="quisommesnous.html">Qui sommes nous</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Nous contacter</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--PRODUITS-->
+    <main>
+        <section class="titre-principal container-fluid bg-orange">
+            <div class="title d-flex align-items-center">
+                <img src="assets/image/cercl.png" class="cercle" alt="Nos Produits">
+                <h1>Nos Produits</h1>
+            </div>
+        </section>
+
+        <section class="container-fluid bg-gris">
+            <div class="row">
+                <div class="col-6 col-photos">
+                    <img src="assets/image/ombmtp_600x400.jpg" alt="">
+                </div>
+
+                <!--OMBRIERES-->
+                <div class="col-6 col-text">
+                    <div class="text-container">
+                        <div class="title">
+                            <img src="assets/image/cercle.png" class="cercle" alt="Nos ombrières dans la ville de Montpellier">
+                            <h2>Nos ombrières dans la ville de Montpellier</h2>
+                        </div>
+                        <div class="lorem">
+                            <p>
+                                Le développement des ombrières solaires pour la recharge des véhicules électriques constitue le pilier de notre développement.
+                                Le projet a été retenu par l’agglomération de Montpellier avec le déploiement de 4 ombrières solaires. <br>
+                                Le projet est financé par l’agglomération de Montpellier, 
+                                le conseil départemental et le conseil régional.
+                                Nous développons actuellement la commercialisation de ce projet en région Occitanie dans le cadre d’un partenariat. <br>
+                                L’agglomération de Toulouse s’est déjà positionné pour l’installation d’ombrières sur son territoire. <br>
+                                Nous souhaitons activement communiquer sur ce partenariat et sur l’implantation d’ombrières à Montpellier afin d’augmenter notre visibilité et notre notoriété 
+                                et faciliter la commercialisation auprès d’autres collectivités.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--MAP-->
+        <section id="map" class="container-fluid">
+            <div class="row">
+                <div id="mapid"></div>
+            </div>
+        </section>
+
+        <!--PANNEAUX SOLAIRES-->
+        <section class="container-fluid bg-gris">
+            <div class="row">
+                <div class="col-6 col-text">
+                    <div class="text-container">
+                        <div class="title">
+                            <img src="assets/image/cercle.png" class="cercle" alt="">
+                            <h2>Nos panneaux solaires</h2>
+                        </div>
+                        <div class="lorem">
+                            <p>
+                                Les panneaux solaires Sunpower offrent le meilleur niveau de durabilité et de rendement sur le marché, avec des clients à l'international 
+                                et de nombreux brevets technologiques les panneaux solaires Sunpower 
+                                incarneront ce qu'il y a de mieux sur le marché dans les années à venir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-photos">
+                    <img src="assets/image/ombmtp2_600x400.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--STRATEGIE-->
+        <section class="titre-principal container-fluid bg-orange">
+            <div class="title d-flex align-items-center">
+                <img src="assets/image/cercl.png" class="cercle" alt="Stratégies">
+                <h1>Stratégies de développement</h1>
+            </div>
+        </section>
+        
+                <!--ETUDE FAISABILITE-->
+                <section class="container-fluid bg-white">
+                    <div class="row">
+                        <div class="col-6 col-photos">
+                            <img src="assets/image/etude_600x400.jpg" alt="">
+                        </div>
+        
+                        
+                        <div class="col-6 col-text">
+                            <div class="text-container">
+                                <div class="title">
+                                    <img src="assets/image/cercle.png" class="cercle" alt="Étude de faisabilité">
+                                    <h2>Étude de faisabilité</h2>
+                                </div>
+                                <div class="lorem">
+                                    <p>
+                                        L’étude de faisabilité d’une installation solaire photovoltaïque devrait être précédée pour les
+                                        bâtiments existants par une analyse du potentiel des économies d’énergie. <br>
+                                        Cette analyse a pour objectif de permettre à notre équipe d’identifier les
+                                        gisements d’économie d’énergie, et de mettre en œuvre rapidement des actions pour génerer
+                                        des consommations d'énergie rentables économiquement.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+        </section>
+ 
+        <!--MISE EN CONFORMITE PLUI-->
+        <section class="container-fluid bg-gris">
+            <div class="row">
+                <div class="col-6 col-text">
+                    <div class="text-container">
+                        <div class="title">
+                            <img src="assets/image/cercle.png" class="cercle" alt="">
+                            <h2>Mise en conformité avec le PLUi</h2>
+                        </div>
+                        <div class="lorem">
+                            <p>
+                                Les technologies Sunpower permettent une réduction de l'émission des gaz à effet de serre, 
+                                de plus Sunpower facilite l'accès à la recharge des véhicules électriques en proposant de nombreuses ombrières 
+                                dans lesquelles les particuliers peuvent charger leur voiture.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-photos">
+                    <img src="assets/image/plui2_600x400.jpg" alt="Mise en conformité avec le PLUI">
+                </div>
+            </div>
+        </section>
+
+        <!--APPELS D'OFFRES-->
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-photos">
+                    <img src="assets/image/appel_600x400.jpg" alt="Appels d'offres">
+                </div>
+                <div class="col-6 col-text">
+                    <div class="text-container">
+                        <div class="title">
+                            <img src="assets/image/cercle.png" class="cercle" alt="Appels d'offres" id="problem">
+                            <h2>Appels d'offres</h2>
+                        </div>
+                        <div class="lorem">
+                            <p>
+                                Nous vous proposons plusieurs propositions commerciales adaptées à vos besoins.
+                                Nos propositions constituent une réponse à vos projets de travaux en fonction des critères établis par le cahier des charges.                   
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--MONTAGE FINANCIER-->
+        <section class="container-fluid bg-gris">
+            <div class="row">
+                <div class="col-6 col-text">
+                    <div class="text-container">
+                        <div class="title">
+                            <img src="assets/image/cercle.png" class="cercle" alt="Montage financier">
+                            <h2>Montage financier</h2>
+                        </div>
+                        <div class="lorem">
+                            <p>
+                                Bien que l’installation de panneaux solaires photovoltaïques ne bénéficie plus de crédit d’impôts depuis janvier 2014, il est possible de trouver des solutions au financement de l’achat du matériel et de son installation. <br>
+                                Selon la région dans laquelle vous résidez, vous pouvez bénéficier d’aides au financement des panneaux solaires photovoltaïques. Il est facile d’obtenir des informations auprès de votre région, de votre département ou de votre commune. <br> 
+                                Il est également possible de profiter d’avantages fiscaux en investissant dans une installation solaire. <br>
+                                Effectivement, si l’habitation à équiper a plus de deux ans, la TVA sur l’achat du matériel est réduite à 5,5%.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-photos">
+                    <img src="assets/image/financier_600x400.jpg" alt="Montage financier">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-12 col-md-3">
+                    <div class="col-container">
+                        <div class="title">
+                            <h5>À PROPOS DE NOUS</h5>
+                        </div>
+                        <ul>
+                            <li><a href="#" class="mb-2">Profil de la compagnie</a></li>
+                            <li><a href="#" class="mb-2">Équipe dirigeante</a></li>
+                            <li><a href="#" class="mb-2">Relations avec les investisseurs</a></li>
+                            <li><a href="#" class="mb-2">Carrières</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col col-12 col-md-3">
+                    <div class="col-container">
+                        <div class="title">
+                            <h5>CONTACTEZ NOUS</h5>
+                        </div>
+                        <ul>
+                            <li><a href="#" class="mb-2">Sunpower@gmail.com</a></li>
+                            <li><a href="#" class="mb-2">Nos partenaires</a></li>
+                            <li><a href="#" class="mb-2">Services clients</a></li>
+                            <li><a href="#" class="mb-2">Mentions légales</a></li>
+                            <li><a href="#" class="mb-2">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col col-12 col-md-3">
+                    <div class="col-container">
+                        <div class="title">
+                            <h5>PROJETS</h5>
+                        </div>
+                        <ul>
+                            <li><a href="#" class="mb-2">Agglomération de Toulouse</a></li>
+                            <li><a href="#" class="mb-2">Agglomération de Montpellier</a></li>
+                            <li><a href="#" class="mb-2">Nos Clients</a></li>
+                            <li><a href="#" class="mb-2">Nos Installateurs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--COPYRIGHT-->
+            <div class="row">
+                <div class="col-12">
+                    <div class="copyright">
+                        © 2021 Company, Inc. Tous droits réservés.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

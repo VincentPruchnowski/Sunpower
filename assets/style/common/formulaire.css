@@ -1,0 +1,143 @@
+/* FORMULAIRE */
+h2 {
+    padding: 30px 0 30px 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px 0;
+    margin: 60px 0 0 0;
+}
+
+footer div {
+    text-align: center;
+}
+
+footer li {
+    text-align: left;
+    margin-left: 138px;
+    padding: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+* {
+    list-style: none;
+    padding: 2px;
+}
+
+.decalageprojets {
+    margin-right: 4%;
+}
+
+.decalagecontact {
+    margin-left: 15%;
+}
+
+.decalagenous {
+    margin-left: 19%;
+}
+
+a:hover {
+    color: orange;
+}
+
+.copyright {
+    position: relative;
+    top: 50px;
+    right: 460px;
+    color: rgb(170, 170, 170);
+}
+
+form {
+    padding-left: 40px;
+    border-radius: 1%;
+    border: solid gray;
+    box-shadow: 7px 5px 5px gray;
+}
+
+label {
+    padding-bottom: 20px;
+}
+
+#lol {
+    margin-bottom: 20px;
+    background-color: rgb(76, 159, 226);
+}
+
+.navbar-nav {
+    background-color: white;
+    font-weight: bold;
+    padding-right: 5%;
+    text-align: center;
+    position: relative;
+    right: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-item {
+    border-radius: 15%;
+}
+
+.nav-link:focus {
+    color: orange!important;
+}
+
+.nav-link:hover {
+    color: orange!important;
+}
+
+.active {
+    background-color: orange;
+}
+
+.nav-link {
+    color: black;
+    font-size: 1.1em;
+}
+
+.navbar-brand {
+    width: 100%;
+}
+
+header img {
+    width: 50%;
+}
+
+.test {
+    padding-left: 700px;
+}
+
+#oui {
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#vousetes {
+    background-image: linear-gradient(to right top, #ffb600, #ffac00, #ffa200, #ff9800, #ff8e00, #ff8700, #ff8000, #ff7800, #ff7200, #ff6b00, #ff6400, #ff5d00);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section#activites div div img, section#infos div div img, #cercle {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: 160px;
+    top: 64px;
+}
+
+.needs-validation {
+    margin: 40px;
+}
+
+#qui {
+    padding: 45px 0px 20px 50px;
+}

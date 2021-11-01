@@ -1,0 +1,57 @@
+/* FOOTER */
+footer {
+    background-color:black;
+    padding: 50px 0 0;
+    color: white;
+}
+
+footer a:hover {
+    color: #f6921e;
+}
+
+footer h5 {
+    color: #f6921e;
+}
+
+footer .row {
+    justify-content: center;
+}
+
+footer .col {
+    display: flex;
+    justify-content: center;
+}
+
+footer .col-container {
+    display: inline-block;
+    padding: 5px;
+}
+
+footer .title {
+    text-align: left;
+
+}
+
+footer ul {
+    margin-top: 25px;
+    padding-left: 0;
+} 
+
+footer li {
+    text-align: left;
+    margin-top: 5px;
+} 
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .copyright {
+    display: block;
+    text-align: center;
+    padding: 25px 0 0;
+    margin: 25px 0 25px;
+    color: rgb(170, 170, 170);
+    border-top: 1px solid rgba(170, 170, 170, .5);
+}
