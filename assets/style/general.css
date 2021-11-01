@@ -1,5 +1,15 @@
 /* GENERAL */
 
+@font-face {
+    font-family: "tommy";
+    src: url("/assets/fonts/tommy/Regular.otf");
+}
+
+body {
+    font-family: "tommy/Regular";
+}
+
+
 * {
     list-style: none;
     font-family: tommy;
